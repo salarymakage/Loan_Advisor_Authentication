@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br>
+<div class="container">
+    <h3>Email Verification with OTP</h3>
+    {% comment %} <form action="" method="POST"> {% endcomment %}
+        {% comment %} {% csrf_token %}   {% endcomment %}
+        {% comment %} <div class="mb-3"> {% endcomment %}
+            {% comment %} <label class="form-label">OTP Code</label> {% endcomment %}
+            {% comment %} <input type="text" class="form-control" name="otp_code" placeholder="Enter OTP Code" required> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+        {% comment %} <button type="submit" class="btn btn-primary">Verify Email</button> {% endcomment %}
+    </form>
+    <br>
+    {% comment %} <p>Already verified your email? <a href="{% url 'signin' %}">Login here</a></p> {% endcomment %}
+    <br>
+    <a href="{% url 'signin' %}" class="btn btn-secondary">Go to Login</a>
+</div>
+{% endblock content %}
